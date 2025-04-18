@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport for scaling -->
   <title>Login Page</title>
   <script src="index.js" defer></script>
   <style>
@@ -40,7 +41,7 @@
     }
 
     .login-box {
-      background-color: #3F4F66; /* Updated to #3F4F66 */
+      background-color: #3F4F66;
       padding: 40px;
       border-radius: 20px;
       width: 300px;
@@ -54,7 +55,7 @@
       color: white;
       font-weight: bold;
       text-align: left;
-      text-transform: capitalize; /* Ensures first letter is uppercase */
+      text-transform: capitalize;
     }
 
     .login-box input {
@@ -79,6 +80,30 @@
 
     .login-box button:hover {
       background-color: #218838;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 30px; /* Smaller header text */
+      }
+
+      .login-box {
+        width: 90%; /* Make the login box wider on mobile */
+        padding: 20px; /* Reduce padding for smaller screens */
+      }
+
+      .login-box label {
+        font-size: 14px; /* Smaller text for labels */
+      }
+
+      .login-box input {
+        font-size: 14px; /* Adjust font size for inputs */
+      }
+
+      .login-box button {
+        font-size: 16px; /* Slightly larger button text */
+      }
     }
   </style>
 </head>
