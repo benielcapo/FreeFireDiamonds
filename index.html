@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <script src="index.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .header h1 {
+      color: black;
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .header img {
+      height: 80px;
+      width: auto;
+    }
+
+    .login-box {
+      background-color: #3F4F66; /* Updated to #3F4F66 */
+      padding: 40px;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .login-box label {
+      display: block;
+      margin-top: 15px;
+      color: white;
+      font-weight: bold;
+      text-align: left;
+      text-transform: capitalize; /* Ensures first letter is uppercase */
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login-box button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Diamantes De</h1>
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <div class="login-box">
+    <label for="username">Usuario</label>
+    <input type="text" id="username" placeholder="Ingresa tu usuario">
+
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" placeholder="Ingresa la cantidad que quieras">
+
+    <button id="loginButton">Dar diamantes</button>
+  </div>
+
+</body>
+</html>
